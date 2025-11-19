@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reaction Tap</title>
+    <meta
+      name="description"
+      content="A tiny reaction time game. Wait for green, then tap as fast as you can."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1 class="title">Reaction Speed</h1>
+      <p class="subtitle">
+        Wait for the button to turn <span class="green-text">green</span>, then click it.
+      </p>
+
+      <section class="game">
+        <p id="status-text" class="status">Click “Start” to begin.</p>
+
+        <button id="game-button" class="game-button">Start</button>
+
+        <div class="stats">
+          <div class="stat-row">
+            <span>Last time:</span>
+            <span id="last-time">–</span>
+          </div>
+          <div class="stat-row">
+            <span>Best time:</span>
+            <span id="best-time">–</span>
+          </div>
+          <div class="stat-row">
+            <span>Attempts:</span>
+            <span id="attempts">0</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="help">
+        <h2>How to play</h2>
+        <ul>
+          <li>Click the <strong>Start</strong> button.</li>
+          <li>Wait until it changes color.</li>
+          <li>Click as quickly as you can when it turns green.</li>
+          <li>Try to beat your best reaction time.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
